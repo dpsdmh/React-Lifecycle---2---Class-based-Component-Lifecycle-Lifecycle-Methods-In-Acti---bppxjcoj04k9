@@ -18,7 +18,13 @@ class App extends React.Component {
 
   
   render() {
-    console.log('rendered')
+    {
+      if(this.state.count == 0){
+          console.log('mounted');
+        }
+      
+
+    }
     return (
       <div id="main">
           <div id="count">{this.state.count}</div>
